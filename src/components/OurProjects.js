@@ -10,11 +10,11 @@ import molegen from '../../public/molegen.svg';
 
 const projects = [
   {
-    title: 'Geekinate',
-    description: 'Services Agency',
-    alt: 'Services Agency',
-    image: geekinate,
-    path: 'https://geekinate.com/',
+    title: 'Havana Tech',
+    description: 'Blockchain-Powered Trading',
+    alt: 'Blockchain-Powered Trading',
+    image: havanatech,
+    path: 'https://havanatechpl.com/',
   },
   {
     title: 'Canitsm',
@@ -24,11 +24,11 @@ const projects = [
     path: 'https://www.canitsm.com/',
   },
   {
-    title: 'Havana Tech',
-    description: 'Blockchain-Powered Trading',
-    alt: 'Blockchain-Powered Trading',
-    image: havanatech,
-    path: 'https://havanatechpl.com/',
+    title: 'Geekinate',
+    description: 'Services Agency',
+    alt: 'Services Agency',
+    image: geekinate,
+    path: 'https://geekinate.com/',
   },
   {
     title: 'Twinhub',
@@ -39,17 +39,10 @@ const projects = [
   },
   {
     title: 'Molegen',
-    description: 'Point of Sale',
-    alt: 'Point of Sale',
+    description: 'Inventory Management System',
+    alt: 'Inventory Management System',
     image: molegen,
     path: '/',
-  },
-  {
-    title: 'Mindstreamsoft',
-    description: 'Digital Partner',
-    alt: 'Digital Partner',
-    image: mindstreamsoft,
-    path: 'https://mindstreamsoft.com/',
   },
   {
     title: 'Qadam',
@@ -57,6 +50,13 @@ const projects = [
     alt: 'Digital Marketplace',
     image: qadam,
     path: 'https://qadam.io/',
+  },
+  {
+    title: 'Mindstreamsoft',
+    description: 'Digital Partner',
+    alt: 'Digital Partner',
+    image: mindstreamsoft,
+    path: 'https://mindstreamsoft.com/',
   },
 ];
 
@@ -89,7 +89,7 @@ const Services = () => (
     style={{ color: '#f6f6f6' }}
     id='projects'
   >
-    <div className='row mb-2' style={{ width: '100%' }}>
+    <div className='row mb-5' style={{ width: '100%' }}>
       <div className='col-12 col-md-8'>
         <div className='services-content'>
           <h6>Our Projects</h6>

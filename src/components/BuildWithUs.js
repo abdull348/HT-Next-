@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import img8 from '../../public/built.png';
+import build from '../../public/built.png';
 
 function BuildWithUs() {
   return (
@@ -23,7 +23,7 @@ function BuildWithUs() {
         </div>
         <div className='col-12 col-md-6 text-center'>
           <Image
-            src={img8}
+            src={build}
             alt='Code Editor'
             className='img-fluid shadow rounded hover-scale'
           />

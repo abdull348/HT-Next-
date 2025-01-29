@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import HeroImage from '../../public/adventure.svg';
+import HeroImage from '../../public/adventure.webp';
 import { BsArrowRight } from 'react-icons/bs';
 
 function Header() {

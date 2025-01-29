@@ -23,8 +23,8 @@ export default function RootLayout({ children }) {
         <WhatWeDo />
         <WhyChooseUs className='section-wrapper' />
         <TechStack />
-        <Projects />
         <BuildWithUs />
+        <Projects />
         <ContactUs />
         {children}
         <Footer />
