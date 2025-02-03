@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import twinhub from '../../public/twinhub.svg';
-import canitsm from '../../public/canitsm.svg';
-import havanatech from '../../public/havanatech.svg';
-import geekinate from '../../public/geekinate.svg';
-import qadam from '../../public/qadam.svg';
-import mindstreamsoft from '../../public/mindstreamsoft.svg';
-import molegen from '../../public/molegen.svg';
+import twinhub from '../../public/twinhub.webp';
+import canitsm from '../../public/canitsm.webp';
+import havanatech from '../../public/havanatech.webp';
+import geekinate from '../../public/geekinate.webp';
+import qadam from '../../public/qadam.webp';
+import mindstreamsoft from '../../public/mindstreamsoft.webp';
+import molegen from '../../public/molegen.webp';
 
 const projects = [
   {
@@ -85,21 +85,21 @@ const ProjectCard = ({ title, description, path, image, alt }) => (
 
 const Services = () => (
   <section
-    className='container p-5 section-wrapper'
+    className='container py-5 section-wrapper'
     style={{ color: '#f6f6f6' }}
     id='projects'
   >
     <div className='row mb-5' style={{ width: '100%' }}>
       <div className='col-12 col-md-8'>
-        <div className='services-content'>
-          <h6>Our Projects</h6>
-          <h1 className='text-primary' style={{ fontSize: '2rem' }}>
+        <div>
+          <h6 className='text-uppercase text-secondary fw-bold mb-3'>
+            Our Projects
+          </h6>
+          {/* <h6>Our Projects</h6> */}
+          <h1 className='mb-2 fs-2 text-primary' style={{ fontWeight: '600' }}>
             Let's take a look at our recent work
           </h1>
         </div>
-      </div>
-      <div className='col-12 col-md-4 d-flex align-items-end justify-content-md-end mt-3 mt-md-0'>
-        <button className='projectButton'>Explore More</button>
       </div>
     </div>
 

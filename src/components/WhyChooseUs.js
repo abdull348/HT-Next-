@@ -29,7 +29,7 @@ const WhyChooseUs = () => {
       iconColor: '#fce7d6',
     },
     {
-      icon: <BsHourglassSplit size={32} color='#ff6038' />,
+      icon: <BsHourglassSplit size={30} color='#ff6038' />,
       title: 'Timely Delivery',
       text: 'Ensuring on-time completion without compromising quality.',
       color: '#ffebe6',
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
   return (
     <div className='container py-5 section-wrapper' id='about'>
       <div className='row align-items-center'>
-        <div className='col-lg-6 col-sm-12 mb-4 mb-lg-0 p-5'>
+        <div className='col-lg-6 col-sm-12 mb-4 mb-lg-0 p-5 fade-in-right'>
           <div className='row'>
             {cards.map((card, index) => (
               <Card key={index} card={card} index={index} />
@@ -54,16 +54,16 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div className='col-lg-6 p-5'>
+        <div className='col-lg-6 p-5 fade-in-left'>
           <div>
             <h6 className='text-uppercase text-secondary fw-bold mb-3'>
               Why Choose Us
             </h6>
-            <h2 className='fw-bold mb-4'>
+            <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
               Grow Your Business with
               <br /> Havana Tech
-            </h2>
-            <p className='text-primary mb-4' style={{ fontSize: '16px' }}>
+            </h1>
+            <p className='text-primary mb-4' style={{ fontSize: '18px' }}>
               Our mission is to empower businesses with custom software and IT
               support that boosts efficiency, fuels growth, and fosters
               innovation. We are committed to building strong, lasting
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
             <div className='d-flex justify-content-between'>
               {statistics.map((stat, index) => (
                 <div key={index}>
-                  <h3 className='text-secondary fw-bold mb-1'>{stat.number}</h3>
+                  <h2 className='text-secondary fw-bold mb-1'>{stat.number}</h2>
                   <p className='text-primary fw-bold mb-0'>{stat.label}</p>
                 </div>
               ))}
@@ -84,7 +84,6 @@ const WhyChooseUs = () => {
   );
 };
 
-// Card component that manages its own hover state
 function Card({ card, index }) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -102,7 +101,6 @@ function Card({ card, index }) {
       }}
       key={index}
     >
-      {/* <div> */}
       <div
         className='fs-2 card-icon mb-3'
         style={{
@@ -122,7 +120,10 @@ function Card({ card, index }) {
       >
         {card.icon}
       </div>
-      <h5 className='fw-bold mt-2' style={{ fontSize: '18px' }}>
+      <h5
+        className='fw-bold mt-2'
+        style={{ fontSize: '18px', letterSpacing: '0.3px', lineHeight: '1.2' }}
+      >
         {card.title}
       </h5>
       <p className='text-primary mb-0' style={{ fontSize: '16px' }}>

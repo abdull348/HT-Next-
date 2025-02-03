@@ -43,7 +43,7 @@ const WhatWeDo = () => {
   return (
     <div className='container py-5 section-wrapper' id='services'>
       <div className='text-center'>
-        <h1 className='mb-5 fw-bold fs-2'>
+        <h1 className='mb-5 fs-2' style={{ fontWeight: '600' }}>
           From Idea to Reality, we bring Full-Stack Expertise
         </h1>
       </div>

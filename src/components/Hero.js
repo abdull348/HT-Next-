@@ -7,8 +7,15 @@ function Header() {
   return (
     <section className='container py-5'>
       <div className='row flex-lg-row align-items-center'>
-        <div className='col-lg-7 col-md-7 text-md-start text-center'>
-          <h1 className='display-4 fw-bold text-primary mb-3'>
+        <div className='col-lg-7 col-md-7 text-md-start text-center fade-in-up'>
+          <h1
+            className='text-primary mb-3'
+            style={{
+              fontWeight: '600',
+              fontSize: '46px',
+              letterSpacing: '1px',
+            }}
+          >
             Driving success
             <br /> with Digital Precision
           </h1>
@@ -35,7 +42,7 @@ function Header() {
             </a>
           </div>
         </div>
-        <div className='col-lg-5 col-md-5 col-sm-12 mt-4 mt-md-0 text-center'>
+        <div className='col-lg-5 col-md-5 col-sm-12 mt-4 mt-md-0 text-center fade-in-up'>
           <div className='text-center'>
             <Image
               src={HeroImage}

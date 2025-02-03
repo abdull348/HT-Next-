@@ -44,7 +44,7 @@ function TechStack() {
         zIndex: 1,
       }}
     >
-      <div className='container section-wrapper tech-stack-container'>
+      <div className='section-wrapper tech-stack-container'>
         <div className='row align-items-center'>
           <div className='col-lg-4 d-flex flex-wrap justify-content-center gap-4 mb-4 mb-lg-0'>
             {technologiesLeft.map((tech, index) => (
@@ -52,18 +52,17 @@ function TechStack() {
                 key={index}
                 className='d-flex justify-content-center align-items-center bg-white shadow'
                 style={{
-                  width: '90px',
-                  height: '90px',
+                  width: '102px',
+                  height: '102px',
                   borderRadius: '15px',
-                  padding: '12px',
                   transition: 'transform 0.3s, box-shadow 0.2s',
                 }}
               >
                 <Image
                   src={tech.src}
                   alt={tech.alt}
-                  width={50}
-                  height={50}
+                  width={56}
+                  height={56}
                   className='img-fluid'
                   style={{ transition: 'transform 0.3s' }}
                 />
@@ -71,28 +70,25 @@ function TechStack() {
             ))}
           </div>
 
-          {/* Center Text Section */}
           <div className='col-lg-4 text-center'>
-            <h1 className='fw-bold mb-4'>Our Technology Stack</h1>
-            <p
-              className='text-primary'
-              style={{ fontSize: '18px', fontWeight: '600' }}
-            >
+            <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
+              Our Technology Stack
+            </h1>
+            <p className='text-primary' style={{ fontSize: '18px' }}>
               Discover the advanced tools and technologies we use to deliver
               efficient, scalable, and innovative solutions for your business
               needs.
             </p>
           </div>
 
-          {/* Right Section */}
           <div className='col-lg-4 d-flex flex-wrap justify-content-center gap-4'>
             {technologiesRight.map((tech, index) => (
               <div
                 key={index}
                 className='d-flex justify-content-center align-items-center bg-white shadow'
                 style={{
-                  width: '90px',
-                  height: '90px',
+                  width: '100px',
+                  height: '100px',
                   borderRadius: '15px',
                   transition: 'transform 0.3s, box-shadow 0.2s',
                 }}
@@ -100,8 +96,8 @@ function TechStack() {
                 <Image
                   src={tech.src}
                   alt={tech.alt}
-                  width={50}
-                  height={50}
+                  width={56}
+                  height={56}
                   className='img-fluid'
                   style={{ transition: 'transform 0.3s' }}
                 />
