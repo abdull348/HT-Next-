@@ -1,0 +1,124 @@
+import Image from 'next/image';
+import Link from 'next/link';
+import twinhub from '../../public/twinhub.webp';
+import canitsm from '../../public/canitsm.webp';
+import havanatech from '../../public/havanatech.webp';
+import geekinate from '../../public/geekinate.webp';
+import qadam from '../../public/qadam.webp';
+import mindstreamsoft from '../../public/mindstreamsoft.webp';
+import molegen from '../../public/molegen.webp';
+
+const projects = [
+  {
+    title: 'Havana Tech',
+    description: 'Blockchain-Powered Trading',
+    alt: 'Blockchain-Powered Trading',
+    image: havanatech,
+    path: 'https://havanatechpl.com/',
+  },
+  {
+    title: 'Canitsm',
+    description: 'IT Consulting Services',
+    alt: 'IT Consulting Services',
+    image: canitsm,
+    path: 'https://www.canitsm.com/',
+  },
+  {
+    title: 'Geekinate',
+    description: 'Services Agency',
+    alt: 'Services Agency',
+    image: geekinate,
+    path: 'https://geekinate.com/',
+  },
+  {
+    title: 'Twinhub',
+    description: 'Coworking Space',
+    alt: 'Coworking Space',
+    image: twinhub,
+    path: 'https://twinhub.pk/',
+  },
+  {
+    title: 'Molegen',
+    description: 'Inventory Management System',
+    alt: 'Inventory Management System',
+    image: molegen,
+    path: '/',
+  },
+  {
+    title: 'Qadam',
+    description: 'Digital Marketplace',
+    alt: 'Digital Marketplace',
+    image: qadam,
+    path: 'https://qadam.io/',
+  },
+  {
+    title: 'Mindstreamsoft',
+    description: 'Digital Partner',
+    alt: 'Digital Partner',
+    image: mindstreamsoft,
+    path: 'https://mindstreamsoft.com/',
+  },
+];
+
+const ProjectCard = ({ title, description, path, image, alt }) => (
+  <div className='portfolio'>
+    <Image
+      className='portfolio_img'
+      src={image}
+      alt={alt}
+      width={300}
+      height={300}
+    />
+    <div className='portfolio_content'>
+      <p className='portfolio_title'>
+        <Link href={path}>
+          {' '}
+          <b style={{ color: '#fff' }}>{title}</b>
+        </Link>
+
+        <br />
+        <b style={{ color: '#26ace3' }}>{description}</b>
+      </p>
+    </div>
+  </div>
+);
+
+const Services = () => (
+  <section
+    className='container py-5 section-wrapper'
+    style={{ color: '#f6f6f6' }}
+    id='projects'
+  >
+    <div className='row mb-5' style={{ width: '100%' }}>
+      <div className='col-12 col-md-8'>
+        <div>
+          <h6 className='text-uppercase text-secondary fw-bold mb-3'>
+            Our Projects
+          </h6>
+          {/* <h6>Our Projects</h6> */}
+          <h1 className='mb-2 fs-2 text-primary' style={{ fontWeight: '600' }}>
+            Let's take a look at our recent work
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div className='row'>
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          // className={`col-3 col-sm-12 text-center projectCard`}
+          className={`col-3 col-sm-12 text-center projectCard ${
+            index === 0 || index === 2 ? 'tall-narrow' : 'wide-short'
+          } ${index === 9 ? 'align-bottom' : ''} ${
+            index === 9 ? 'align-top' : ''
+          }`}
+        >
+          <ProjectCard {...project} />
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
+export default Services;
