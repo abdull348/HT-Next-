@@ -4,7 +4,7 @@ import { SiNextdotjs } from 'react-icons/si';
 import { PiCheckerboardFill } from 'react-icons/pi';
 import { FaWordpressSimple, FaNodeJs } from 'react-icons/fa';
 import { FcAdvertising } from 'react-icons/fc';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const WhatWeDo = () => {
   const featureCards = [

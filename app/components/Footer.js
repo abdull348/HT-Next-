@@ -7,55 +7,60 @@ import {
   FaFacebook,
   FaLocationArrow,
 } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import logo from '../../public/havana-logo.svg';
 
 function Footer() {
   const footerInfo = [
     {
-      icon: <FaLocationArrow className='text-white fs-2 me-2' />,
-      title: <p className='fw-bold text-white mb-0'>Address</p>,
-      content: <p className='text-white'>Islamabad, Pakistan</p>,
+      icon: <FaLocationArrow className='text-white fs-3 me-1' />,
+      title: <p className='text-white mb-0'>Address</p>,
+      content: <p className='m-0 fw-bold text-white'>Islamabad, Pakistan</p>,
     },
     {
-      icon: <HiMail className='text-white fs-2 me-2' />,
-      title: <p className='fw-bold text-white mb-0'>Email us</p>,
+      icon: <HiMail className='text-white fs-2 me-1' />,
+      title: <p className='text-white mb-0'>Email us</p>,
       content: (
         <a
           href='mailto:arsalar286@gmail.com'
-          className='text-white text-decoration-none d-block'
+          className='text-white fw-bold text-decoration-none d-block'
         >
           arsalar286@gmail.com
         </a>
       ),
     },
     {
-      icon: <TbPhoneCall className='text-white fs-2 me-2' />,
-      title: <p className='fw-bold text-white mb-0'>Call us</p>,
-      content: <p className='m-0 text-white'>+(92) 3485376283</p>,
+      icon: <TbPhoneCall className='text-white fs-2 me-1' />,
+      title: <p className='text-white mb-0'>Call us</p>,
+      content: <p className='m-0 fw-bold text-white'>+(92) 3485376283</p>,
     },
   ];
 
   const socialLinks = [
     {
       href: 'https://www.facebook.com',
-      icon: <FaFacebook className='fs-3 text-white' />,
+      icon: <FaFacebook className='fs-4 text-white' />,
     },
     {
       href: 'https://www.instagram.com',
-      icon: <FaInstagram className='fs-3 text-white' />,
+      icon: <FaInstagram className='fs-4 text-white' />,
+    },
+    {
+      href: 'https://www.twitter.com',
+      icon: <FaXTwitter className='fs-4 text-white' />,
     },
     {
       href: 'https://www.linkedin.com',
-      icon: <FaLinkedin className='fs-3 text-white' />,
+      icon: <FaLinkedin className='fs-4 text-white' />,
     },
   ];
 
   return (
     <footer
-      className='py-5'
       style={{
-        background: '#2c3e50',
-        padding: '40px 0',
+        background: 'linear-gradient(150deg, #2c3e50 0%, #1f6d8f 100%)',
+        paddingTop: '80px',
+        paddingBottom: '20px',
       }}
     >
       <div className='container'>
@@ -71,7 +76,7 @@ function Footer() {
             >
               {info.icon}
               <div className='ms-2'>
-                <p className='fw-bold mb-1'>{info.title}</p>
+                <p className='mb-0'>{info.title}</p>
                 {info.content}
               </div>
             </div>
@@ -91,7 +96,7 @@ function Footer() {
                 href={link.href}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='mx-3 me-3'
+                className='mx-3 me-2'
               >
                 {link.icon}
               </a>

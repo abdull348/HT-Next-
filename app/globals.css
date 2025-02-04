@@ -382,10 +382,10 @@ a {
 
 .portfolio_content {
   position: absolute;
-  top: 18;
-  left: 18;
-  right: 18;
-  bottom: 18;
+  top: 22px;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -406,15 +406,6 @@ a {
   color: #2c3e50;
   margin: 0;
 }
-/* .services-content h6 {
-  line-height: 1.7;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  color: #26ace3;
-  margin-bottom: 10px;
-  font-size: 1rem;
-  font-weight: 800;
-} */
 .projectButton {
   line-height: 1.7;
   letter-spacing: 0.4px;
