@@ -4,7 +4,6 @@ import { SiNextdotjs } from 'react-icons/si';
 import { PiCheckerboardFill } from 'react-icons/pi';
 import { FaWordpressSimple, FaNodeJs } from 'react-icons/fa';
 import { FcAdvertising } from 'react-icons/fc';
-// import Link from 'next/link';
 
 const WhatWeDo = () => {
   const featureCards = [
@@ -42,7 +41,7 @@ const WhatWeDo = () => {
 
   return (
     <div className='container py-5 section-wrapper' id='services'>
-      <div className='text-center'>
+      <div className='text-center' data-aos='fade-up' data-aos-duration='2000'>
         <h1 className='mb-5 fs-2' style={{ fontWeight: '600' }}>
           From Idea to Reality, we bring Full-Stack Expertise
         </h1>
@@ -50,7 +49,10 @@ const WhatWeDo = () => {
       <div className='row'>
         {featureCards.map((card, index) => (
           <div className='col-md-6 mb-4' key={index}>
-            <div className='d-flex p-4 border rounded shadow-sm align-items-start featureCard'>
+            <div
+              className='d-flex p-4 border rounded shadow-sm align-items-start featureCard bg-white'
+              style={{ position: 'relative', zIndex: 1 }}
+            >
               <div
                 className='me-3 d-flex justify-content-center align-items-center'
                 style={{

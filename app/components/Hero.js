@@ -7,7 +7,7 @@ function Header() {
   return (
     <section className='container py-5'>
       <div className='row flex-lg-row align-items-center'>
-        <div className='col-lg-7 col-md-7 text-md-start text-center fade-in-up'>
+        <div className='col-lg-7 col-md-7 text-md-start text-center'>
           <h1
             className='text-primary mb-3'
             style={{
@@ -24,7 +24,11 @@ function Header() {
             marketing. Elevate your brand with tailored web development and SEO
             services.
           </p>
-          <div className='d-flex flex-md-row flex-column flex-md-nowrap justify-content-md-start justify-content-center gap-2'>
+          <div
+            className='d-flex flex-md-row flex-column flex-md-nowrap justify-content-md-start justify-content-center gap-2'
+            data-aos='fade-up'
+            data-aos-duration='2000'
+          >
             <a
               href='#contact'
               className='btn px-3 py-1 quoteButton'
@@ -42,13 +46,14 @@ function Header() {
             </a>
           </div>
         </div>
-        <div className='col-lg-5 col-md-5 col-sm-12 mt-4 mt-md-0 text-center fade-in-up'>
+        <div className='col-lg-5 col-md-5 col-sm-12 mt-4 mt-md-0 text-center'>
           <div className='text-center'>
             <Image
               src={HeroImage}
               loading='lazy'
               alt='Startup Illustration'
               className='img-fluid custom-img-size'
+              style={{ position: 'relative', zIndex: 1 }}
             />
           </div>
         </div>

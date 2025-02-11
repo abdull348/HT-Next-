@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
   ];
 
   const statistics = [
-    { number: '100+', label: 'Active Clients' },
+    { number: '70+', label: 'Active Clients' },
     { number: '250+', label: 'Projects Done' },
     { number: '25+', label: 'Team Advisors' },
   ];
@@ -46,7 +46,10 @@ const WhyChooseUs = () => {
   return (
     <div className='container py-5 section-wrapper' id='about'>
       <div className='row align-items-center'>
-        <div className='col-lg-6 col-sm-12 mb-4 mb-lg-0 p-5 fade-in-right'>
+        <div
+          className='col-lg-6 col-sm-12 mb-4 mb-lg-0 p-5'
+          style={{ position: 'relative', zIndex: 1 }}
+        >
           <div className='row'>
             {cards.map((card, index) => (
               <Card key={index} card={card} index={index} />
@@ -54,9 +57,13 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div className='col-lg-6 p-5 fade-in-left'>
+        <div className='col-lg-6 p-5'>
           <div>
-            <h6 className='text-uppercase text-secondary fw-bold mb-3'>
+            <h6
+              className='text-uppercase text-secondary fw-bold mb-3'
+              data-aos='fade-left'
+              data-aos-duration='2000'
+            >
               Why Choose Us
             </h6>
             <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
@@ -69,7 +76,11 @@ const WhyChooseUs = () => {
               innovation. We are committed to building strong, lasting
               relationships with our clients by consistently delivering value
             </p>
-            <div className='d-flex justify-content-between'>
+            <div
+              className='d-flex justify-content-between'
+              data-aos='fade-up'
+              data-aos-duration='2000'
+            >
               {statistics.map((stat, index) => (
                 <div key={index}>
                   <h2 className='text-secondary fw-bold mb-1'>{stat.number}</h2>

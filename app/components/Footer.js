@@ -14,16 +14,24 @@ function Footer() {
   const footerInfo = [
     {
       icon: <FaLocationArrow className='text-white fs-3 me-1' />,
-      title: <p className='text-white mb-0'>Address</p>,
-      content: <p className='m-0 fw-bold text-white'>Islamabad, Pakistan</p>,
+      title: (
+        <p className='text-white mb-0' style={{ fontSize: '14px' }}>
+          Address
+        </p>
+      ),
+      content: <p className='m-0 text-white'>Islamabad, Pakistan</p>,
     },
     {
       icon: <HiMail className='text-white fs-2 me-1' />,
-      title: <p className='text-white mb-0'>Email us</p>,
+      title: (
+        <p className='text-white mb-0' style={{ fontSize: '14px' }}>
+          Email us
+        </p>
+      ),
       content: (
         <a
           href='mailto:arsalar286@gmail.com'
-          className='text-white fw-bold text-decoration-none d-block'
+          className='text-white text-decoration-none d-block'
         >
           arsalar286@gmail.com
         </a>
@@ -31,8 +39,12 @@ function Footer() {
     },
     {
       icon: <TbPhoneCall className='text-white fs-2 me-1' />,
-      title: <p className='text-white mb-0'>Call us</p>,
-      content: <p className='m-0 fw-bold text-white'>+(92) 3485376283</p>,
+      title: (
+        <p className='text-white mb-0' style={{ fontSize: '14px' }}>
+          Call us
+        </p>
+      ),
+      content: <p className='m-0 text-white'>+(92) 3485376283</p>,
     },
   ];
 
@@ -58,8 +70,9 @@ function Footer() {
   return (
     <footer
       style={{
+        position: 'relative',
         background: 'linear-gradient(150deg, #2c3e50 0%, #1f6d8f 100%)',
-        paddingTop: '80px',
+        paddingTop: '85px',
         paddingBottom: '20px',
       }}
     >

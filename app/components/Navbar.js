@@ -23,7 +23,10 @@ function Navbar() {
   ];
 
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-light py-2'>
+    <nav
+      className='navbar navbar-expand-lg navbar-light bg-light py-2'
+      style={{ position: 'relative', zIndex: 1 }}
+    >
       <div className='container'>
         <Link href='/' className='navbar-brand d-flex align-items-center'>
           <Image src={toplogo} alt='Logo' width={130} height={50} />

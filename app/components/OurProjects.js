@@ -92,11 +92,19 @@ const Services = () => (
     <div className='row mb-5' style={{ width: '100%' }}>
       <div className='col-12 col-md-8'>
         <div>
-          <h6 className='text-uppercase text-secondary fw-bold mb-3'>
+          <h6
+            className='text-uppercase text-secondary fw-bold mb-3'
+            data-aos='fade-right'
+            data-aos-duration='2000'
+          >
             Our Projects
           </h6>
-          {/* <h6>Our Projects</h6> */}
-          <h1 className='mb-2 fs-2 text-primary' style={{ fontWeight: '600' }}>
+          <h1
+            className='mb-2 fs-2 text-primary'
+            style={{ fontWeight: '600' }}
+            data-aos='fade-left'
+            data-aos-duration='2000'
+          >
             Let's take a look at our recent work
           </h1>
         </div>
@@ -107,7 +115,6 @@ const Services = () => (
       {projects.map((project, index) => (
         <div
           key={index}
-          // className={`col-3 col-sm-12 text-center projectCard`}
           className={`col-3 col-sm-12 text-center projectCard ${
             index === 0 || index === 2 ? 'tall-narrow' : 'wide-short'
           } ${index === 9 ? 'align-bottom' : ''} ${

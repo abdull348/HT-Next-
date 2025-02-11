@@ -331,29 +331,6 @@ a {
 }
 
 /*Tech Stack*/
-.tech-stack-section {
-  position: relative;
-  background-image: url('/tech-stack-bg.svg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.tech-stack-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 0;
-}
-.tech-stack-section .container {
-  position: relative;
-  z-index: 1;
-}
 .tech-stack-container {
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -455,66 +432,5 @@ a {
   .projectCard {
     width: 100%;
     height: auto;
-  }
-}
-
-/*Build with us*/
-.hover-scale {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.hover-scale:hover {
-  transform: scale(1.02);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
-.fade-in-left {
-  animation: fadeInLeft 1.5s ease-in-out;
-}
-.fade-in-right {
-  animation: fadeInRight 1.5s ease-in-out;
-}
-.fade-in-up {
-  animation: fadeInUp 1.5s ease-in-out;
-}
-.fade-in-down {
-  animation: fadeInDown 1.5s ease-in-out;
-}
-@keyframes fadeInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
