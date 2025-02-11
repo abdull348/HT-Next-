@@ -114,7 +114,11 @@ function ContactUs() {
   return (
     <div className='container py-5 section-wrapper' id='contact'>
       <div className='row align-items-center'>
-        <div className='text-center'>
+        <div
+          className='text-center'
+          data-aos='fade-up'
+          data-aos-duration='2000'
+        >
           <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
             Get In Touch!
           </h1>
@@ -125,9 +129,12 @@ function ContactUs() {
         </div>
         <div className='col-12 col-lg-6 mb-4 mb-lg-0 text-center'>
           <Image
+            data-aos='zoom-in'
+            data-aos-duration='2000'
             src={contactIllustration}
             alt='Contact Illustration'
-            className='img-fluid fade-in-left'
+            className='img-fluid'
+            style={{ position: 'relative', zIndex: 1 }}
             width={450}
             height={300}
             priority
@@ -135,7 +142,11 @@ function ContactUs() {
         </div>
 
         <div className='col-12 col-lg-6 p-5'>
-          <div className='card shadow-sm border rounded-3 fade-in-right'>
+          <div
+            className='card shadow-sm border rounded-3'
+            data-aos='zoom-in'
+            data-aos-duration='2000'
+          >
             <div className='card-body'>
               <form onSubmit={handleSubmit} noValidate>
                 <div className='row p-3'>
@@ -224,7 +235,7 @@ function ContactUs() {
                   </div>
                 )}
 
-                <div className='mt-4 px-3'>
+                <div className='mt-3 px-3'>
                   <button
                     type='submit'
                     className='btn btn-primary w-100 border-0'
