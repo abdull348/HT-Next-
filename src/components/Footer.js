@@ -18,7 +18,7 @@ function Footer() {
     },
     {
       icon: <HiMail className='text-white fs-2 me-2' />,
-      title: <p className='fw-bold text-white mb-0'>Email us</p>,
+      title: <h3 className='fw-bold text-white mb-0'>Email us</h3>,
       content: (
         <a
           href='mailto:arsalar286@gmail.com'
@@ -71,7 +71,7 @@ function Footer() {
             >
               {info.icon}
               <div className='ms-2'>
-                <p className='fw-bold mb-1'>{info.title}</p>
+                <h2 className='fw-bold mb-1'>{info.title}</h2>
                 {info.content}
               </div>
             </div>
