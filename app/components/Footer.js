@@ -84,7 +84,7 @@ function Footer() {
 
           {footerInfo.map((info, index) => (
             <div
-              className='col-12 col-md-3 d-flex align-items-center mb-4 mb-md-0'
+              className='col-12 col-md-3 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0'
               key={index}
             >
               {info.icon}

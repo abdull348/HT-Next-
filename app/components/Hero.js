@@ -25,20 +25,20 @@ function Header() {
             services.
           </p>
           <div
-            className='d-flex flex-md-row flex-column flex-md-nowrap justify-content-md-start justify-content-center gap-2'
+            className='d-flex flex-md-row align-items-md-start align-items-center gap-2 btn-center'
             data-aos='fade-up'
             data-aos-duration='2000'
           >
             <a
               href='#contact'
-              className='btn px-3 py-1 quoteButton'
+              className='btn quoteButton px-3 py-1'
               rel='noopener noreferrer'
             >
               Get to Quote
             </a>
             <a
               href='https://calendly.com/arsalar286'
-              className='btn meetingButton border-0 px-3 py-1 d-flex align-items-center justify-content-center'
+              className='btn meetingButton border-0 px-3 py-1 d-flex align-items-center'
               target='_blank'
               rel='noopener noreferrer'
             >
