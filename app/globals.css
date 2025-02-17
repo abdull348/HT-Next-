@@ -260,62 +260,16 @@ a {
   transform: translateX(4px);
 }
 @media (max-width: 768px) {
+  .btn-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .display-4 {
     font-size: 2rem;
   }
   .btn {
     font-size: 0.9rem;
-  }
-}
-
-/*Why Choose us*/
-.chooseCard {
-  background-color: #fff;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  cursor: pointer;
-  margin: 0 auto;
-  padding: 30px;
-  transition: background-color 0.6s ease, box-shadow 0.6s ease;
-}
-.chooseCard .card-icon {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin: 0 auto;
-  transition: background-color 0.6s ease, color 0.6s ease, box-shadow 0.6s ease;
-}
-.chooseCard:hover {
-  background-color: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.chooseCard.tall-narrow {
-  height: 290px;
-  width: 250px;
-}
-.chooseCard.wide-short {
-  height: 270px;
-  width: 250px;
-}
-.chooseCard.align-bottom {
-  align-self: end !important;
-  margin-bottom: 0px !important;
-}
-.chooseCard.align-top {
-  align-self: end !important;
-  margin-bottom: 34px !important;
-}
-@media (max-width: 768px) {
-  .chooseCard {
-    width: 100%;
-    height: auto;
   }
 }
 
@@ -404,6 +358,8 @@ a {
   background-color: #fff;
   border-radius: 15px;
   display: flex;
+  height: 300px;
+  width: 300px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -411,22 +367,6 @@ a {
   cursor: pointer;
   margin: 0 auto;
   transition: background-color 0.6s ease, box-shadow 0.6s ease;
-}
-.projectCard.tall-narrow {
-  height: 250px;
-  width: 280px;
-}
-.projectCard.wide-short {
-  height: 280px;
-  width: 280px;
-}
-.projectCard.align-bottom {
-  align-self: end !important;
-  margin-bottom: 0px !important;
-}
-.projectCard.align-top {
-  align-self: end !important;
-  margin-bottom: 40px !important;
 }
 @media (max-width: 768px) {
   .projectCard {

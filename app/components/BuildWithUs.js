@@ -40,7 +40,7 @@ function BuildWithUs() {
           </Link>
         </div>
         <div
-          className='col-12 col-md-6 text-center p-5'
+          className='col-12 col-md-6 text-center p-4 p-lg-5'
           data-aos='fade-up'
           data-aos-duration='2000'
         >

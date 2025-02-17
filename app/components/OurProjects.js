@@ -89,7 +89,7 @@ const Services = () => (
     style={{ color: '#f6f6f6' }}
     id='projects'
   >
-    <div className='row mb-5' style={{ width: '100%' }}>
+    <div className='row' style={{ width: '100%' }}>
       <div className='col-12 col-md-8'>
         <div>
           <h6
@@ -115,11 +115,7 @@ const Services = () => (
       {projects.map((project, index) => (
         <div
           key={index}
-          className={`col-3 col-sm-12 text-center projectCard ${
-            index === 0 || index === 2 ? 'tall-narrow' : 'wide-short'
-          } ${index === 9 ? 'align-bottom' : ''} ${
-            index === 9 ? 'align-top' : ''
-          }`}
+          className={`col-3 mt-2 mb-2 col-sm-12 px-5 p-lg-3 text-center projectCard`}
         >
           <ProjectCard {...project} />
         </div>

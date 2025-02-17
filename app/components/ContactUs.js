@@ -141,7 +141,7 @@ function ContactUs() {
           />
         </div>
 
-        <div className='col-12 col-lg-6 p-5'>
+        <div className='col-12 col-lg-6 p-2 p-lg-5'>
           <div
             className='card shadow-sm border rounded-3'
             data-aos='zoom-in'
