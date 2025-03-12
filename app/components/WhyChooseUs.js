@@ -48,16 +48,32 @@ const WhyChooseUs = () => {
 
         <div className='col-lg-6 p-3 p-lg-5'>
           <h6
-            className='text-uppercase text-secondary fw-bold mb-3'
+            className='text-uppercase fw-bold mb-1 fs-1'
             data-aos='fade-left'
             data-aos-duration='2000'
+            style={{
+              color: '#fff',
+              letterSpacing: '1.5px',
+              position: 'relative',
+              display: 'inline-block',
+              textShadow: `
+      -1px -1px 0 #2f1c5b,
+      1px -1px 0 #2f1c5b,
+      -1px 1px 0 #2f1c5b,
+      1px 1px 0 #2f1c5b
+    `,
+            }}
           >
             Why Choose Us
           </h6>
-          <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
-            Grow Your Business with <br /> Havana Tech
+
+          <h1
+            className='mb-2 fs-2'
+            style={{ color: '#2f1c5b', fontWeight: '600' }}
+          >
+            Grow Your Business with <br /> HT.
           </h1>
-          <p className='text-primary mb-4' style={{ fontSize: '18px' }}>
+          <p className='text-primary mb-4 fs-6'>
             Our mission is to empower businesses with custom software and IT
             support that boosts efficiency, fuels growth, and fosters
             innovation. We are committed to building strong, lasting
@@ -69,13 +85,17 @@ const WhyChooseUs = () => {
             data-aos-duration='2000'
           >
             {statistics.map((stat, index) => (
-              <div key={index}>
-                <h2 className='text-secondary fw-bold mb-1'>{stat.number}</h2>
-                {/* <p className='text-primary fw-bold mb-0'>{stat.label}</p> */}
-                <p className='text-primary fw-bold mb-0 d-none d-md-block'>
+              <div key={index} style={{ color: '#2f1c5b' }}>
+                <h3 className='mb-1' style={{ fontWeight: '600' }}>
+                  {stat.number}
+                </h3>
+                <p
+                  className='mb-0 d-none d-md-block'
+                  style={{ fontWeight: '500' }}
+                >
                   {stat.label}
                 </p>
-                <p className='text-primary fw-bold mb-0 d-md-none'>
+                <p className='mb-0 d-md-none' style={{ fontWeight: '500' }}>
                   {stat.shortLabel}
                 </p>
               </div>

@@ -36,14 +36,14 @@ const ParticlesBackground = () => {
                 distance: 120,
                 links: {
                   opacity: 0.7,
-                  color: '#26ace3',
+                  color: '#6874e8',
                 },
               },
             },
           },
           particles: {
             color: {
-              value: '#26ace3',
+              value: '#6874e8',
             },
             move: {
               enable: true,

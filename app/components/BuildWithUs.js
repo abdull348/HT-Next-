@@ -10,33 +10,49 @@ function BuildWithUs() {
         <div className='col-12 col-md-6 mb-4 mb-md-0 p-4'>
           <h1
             className='mb-3 fs-2'
-            style={{ fontWeight: '600' }}
+            style={{ fontWeight: '600', color: '#2f1c5b' }}
             data-aos='fade-up'
             data-aos-duration='2000'
           >
             Start building
-            <br /> great software with us
+            <br />{' '}
+            <span
+              className='build_highlighted_text'
+              style={{
+                position: 'relative',
+                zIndex: 1,
+                position: 'relative',
+                display: 'inline-block',
+                padding: '2px 5px',
+                backgroundColor: '#6874e8',
+                color: '#fff',
+                borderRadius: '3px',
+                transform: 'skew(-6deg)',
+              }}
+            >
+              Great Software
+            </span>{' '}
+            with us
           </h1>
           <p
             className='text-primary mb-4'
-            style={{ fontSize: '18px' }}
+            style={{ fontSize: '16px' }}
             data-aos='fade-up'
-            data-aos-duration='2000'
+            data-aos-duration='2500'
           >
             Transform Your Ideas into Innovative Software Solutions with{' '}
-            <span className='text-secondary fw-bold'>Havana Technologies</span>.
-            In today’s rapidly evolving digital landscape, having robust,
-            scalable, and high-performance software is essential for businesses
-            looking to stay ahead of the competition.
+            <span className='text-secondary fw-bold'>HT</span>. In today’s
+            rapidly evolving digital landscape, having robust, scalable, and
+            high-performance software is essential for businesses looking to
+            stay ahead of the competition.
           </p>
           <Link
-            className='projectButton'
+            className='quoteButton'
             href='#contact'
-            data-aos='fade-down'
-            data-aos-duration='2000'
-            style={{ background: '#26ace3', color: '#fff' }}
+            data-aos='fade-up'
+            data-aos-duration='3000'
           >
-            Contact Us
+            Get in Touch
           </Link>
         </div>
         <div

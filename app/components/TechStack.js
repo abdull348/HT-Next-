@@ -69,10 +69,13 @@ function TechStack() {
         </div>
 
         <div className='col-lg-4 text-center'>
-          <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
+          <h1
+            className='mb-3 fs-2'
+            style={{ color: '#2f1c5b', fontWeight: '600' }}
+          >
             Tools & Technologies
           </h1>
-          <p className='text-primary' style={{ fontSize: '18px' }}>
+          <p style={{ fontSize: '16px', color: '#667085' }}>
             Discover the advanced tools and technologies we use to deliver
             efficient, scalable, and innovative solutions for your business
             needs.

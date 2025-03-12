@@ -77,7 +77,7 @@ const ProjectCard = ({ title, description, path, image, alt }) => (
         </Link>
 
         <br />
-        <b style={{ color: '#26ace3' }}>{description}</b>
+        <b style={{ color: '#6874e8' }}>{description}</b>
       </p>
     </div>
   </div>
@@ -86,26 +86,41 @@ const ProjectCard = ({ title, description, path, image, alt }) => (
 const Services = () => (
   <section
     className='container py-5 section-wrapper'
-    style={{ color: '#f6f6f6' }}
+    style={{
+      color: '#f6f6f6',
+    }}
     id='projects'
   >
     <div className='row' style={{ width: '100%' }}>
       <div className='col-12 col-md-8'>
         <div>
           <h6
-            className='text-uppercase text-secondary fw-bold mb-3'
-            data-aos='fade-right'
+            className='text-uppercase fw-bold mb-1 fs-1'
+            data-aos='fade-left'
             data-aos-duration='2000'
+            style={{
+              color: '#fff',
+              letterSpacing: '1.5px',
+              position: 'relative',
+              display: 'inline-block',
+              textShadow: `
+      -1px -1px 0 #2f1c5b,
+      1px -1px 0 #2f1c5b,
+      -1px 1px 0 #2f1c5b,
+      1px 1px 0 #2f1c5b
+    `,
+            }}
           >
             Our Projects
           </h6>
           <h1
-            className='mb-2 fs-2 text-primary'
-            style={{ fontWeight: '600' }}
+            className='mb-2 fs-2'
+            style={{ fontWeight: '600', color: '#2f1c5b' }}
             data-aos='fade-left'
             data-aos-duration='2000'
           >
-            Let's take a look at our recent work
+            Let's take a look at our
+            <span style={{ color: '#6874e8' }}> Recent Works</span>
           </h1>
         </div>
       </div>

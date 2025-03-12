@@ -119,7 +119,10 @@ function ContactUs() {
           data-aos='fade-up'
           data-aos-duration='2000'
         >
-          <h1 className='mb-3 fs-2' style={{ fontWeight: '600' }}>
+          <h1
+            className='mb-3 fs-2'
+            style={{ fontWeight: '600', color: '#2f1c5b' }}
+          >
             Get In Touch!
           </h1>
           <p>
@@ -158,7 +161,7 @@ function ContactUs() {
                       <label
                         htmlFor={field.id}
                         className='form-label'
-                        style={{ fontWeight: '600' }}
+                        style={{ fontWeight: '400' }}
                       >
                         {field.label}
                       </label>
@@ -192,7 +195,7 @@ function ContactUs() {
                     <label
                       htmlFor='service'
                       className='form-label'
-                      style={{ fontWeight: '600' }}
+                      style={{ fontWeight: '400' }}
                     >
                       Select a Service
                     </label>
@@ -239,7 +242,7 @@ function ContactUs() {
                   <button
                     type='submit'
                     className='btn btn-primary w-100 border-0'
-                    style={{ background: '#26ace3', color: '#fff' }}
+                    style={{ background: '#6874e8', color: '#fff' }}
                     disabled={!isFormValid}
                   >
                     Send Message
