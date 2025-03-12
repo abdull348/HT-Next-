@@ -9,17 +9,21 @@ function Header() {
       <div className='row flex-lg-row align-items-center'>
         <div className='col-lg-7 col-md-7 text-md-start text-center'>
           <h1
-            className='text-primary mb-3'
+            className='mb-3 fs-1'
             style={{
               fontWeight: '600',
-              fontSize: '46px',
-              letterSpacing: '1px',
+              letterSpacing: '0.5px',
+              color: '#2f1c5b',
             }}
           >
             Driving success
-            <br /> with Digital Precision
+            <br /> with{' '}
+            <span className='Home_highlighted_text'>
+              <span style={{ color: 'rgb(250, 169, 22)' }}>Digital</span>{' '}
+              Precision
+            </span>
           </h1>
-          <p className='mb-4' style={{ fontSize: '18px', color: '#2c3e50' }}>
+          <p className='mb-4' style={{ fontSize: '16px', color: '#667085' }}>
             We craft web solutions and drive growth with cutting-edge digital
             marketing. Elevate your brand with tailored web development and SEO
             services.
@@ -38,7 +42,7 @@ function Header() {
             </a>
             <a
               href='https://calendly.com/arsalar286'
-              className='btn meetingButton border-0 px-3 py-1 d-flex align-items-center'
+              className='btn meetingButton border-0 px-3 d-flex align-items-center'
               target='_blank'
               rel='noopener noreferrer'
             >

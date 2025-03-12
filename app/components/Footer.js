@@ -1,19 +1,15 @@
 import Image from 'next/image';
 import { HiMail } from 'react-icons/hi';
 import { TbPhoneCall } from 'react-icons/tb';
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaFacebook,
-  FaLocationArrow,
-} from 'react-icons/fa';
+import { IoLocationOutline } from 'react-icons/io5';
+import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import logo from '../../public/havana-logo.svg';
 
 function Footer() {
   const footerInfo = [
     {
-      icon: <FaLocationArrow className='text-white fs-3 me-1' />,
+      icon: <IoLocationOutline className='text-white fs-3 me-1' />,
       title: (
         <p className='text-white mb-0' style={{ fontSize: '14px' }}>
           Address
@@ -22,7 +18,7 @@ function Footer() {
       content: <p className='m-0 text-white'>Islamabad, Pakistan</p>,
     },
     {
-      icon: <HiMail className='text-white fs-2 me-1' />,
+      icon: <HiMail className='text-white fs-3 me-1' />,
       title: (
         <p className='text-white mb-0' style={{ fontSize: '14px' }}>
           Email us
@@ -38,7 +34,7 @@ function Footer() {
       ),
     },
     {
-      icon: <TbPhoneCall className='text-white fs-2 me-1' />,
+      icon: <TbPhoneCall className='text-white fs-3 me-1' />,
       title: (
         <p className='text-white mb-0' style={{ fontSize: '14px' }}>
           Call us
@@ -71,7 +67,7 @@ function Footer() {
     <footer
       style={{
         position: 'relative',
-        background: 'linear-gradient(150deg, #2c3e50 0%, #1f6d8f 100%)',
+        background: 'linear-gradient(150deg, #0f172a 0%, #1f6d8f 100%)',
         paddingTop: '85px',
         paddingBottom: '20px',
       }}
@@ -100,7 +96,9 @@ function Footer() {
 
         <div className='row d-flex justify-content-between align-items-center'>
           <div className='col-auto'>
-            <p className='mb-1 text-white'>Privacy Policy</p>
+            <p className='mb-1 text-white' style={{ fontSize: '14px' }}>
+              Privacy Policy
+            </p>
           </div>
           <div className='col-auto'>
             {socialLinks.map((link, index) => (

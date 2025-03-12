@@ -42,8 +42,12 @@ const WhatWeDo = () => {
   return (
     <div className='container py-5 section-wrapper' id='services'>
       <div className='text-center' data-aos='fade-up' data-aos-duration='2000'>
-        <h1 className='mb-5 fs-2' style={{ fontWeight: '600' }}>
-          From Idea to Reality, we bring Full-Stack Expertise
+        <h1
+          className='mb-5 fs-2'
+          style={{ color: '#2f1c5b', fontWeight: '600' }}
+        >
+          From Idea to Reality, we bring{' '}
+          <span style={{ color: '#6874e8' }}>Full-Stack Expertise</span>
         </h1>
       </div>
       <div className='row'>
@@ -56,7 +60,7 @@ const WhatWeDo = () => {
               <div
                 className='me-3 d-flex justify-content-center align-items-center'
                 style={{
-                  color: '#26ace3',
+                  color: '#6874e8',
                   width: '60px',
                   height: '60px',
                 }}
@@ -67,17 +71,13 @@ const WhatWeDo = () => {
                 <h4
                   className='mb-2'
                   style={{
-                    color: '#2c3e50',
                     fontSize: '20px',
-                    fontWeight: '800',
+                    fontWeight: '500',
                   }}
                 >
                   {card.title}
                 </h4>
-                <p
-                  className='mb-2'
-                  style={{ color: '#2c3e50', fontSize: '16px' }}
-                >
+                <p className='mb-1' style={{ fontSize: '16px' }}>
                   {card.text}
                 </p>
               </div>

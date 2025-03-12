@@ -11,6 +11,10 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    if (isOpen) setIsOpen(false);
+  };
+
   const navbarData = [
     { title: 'About', path: '#about' },
     { title: 'Services', path: '#services' },
@@ -50,11 +54,16 @@ function Navbar() {
                     className='nav-link mx-2 px-3 highlight'
                     target='_blank'
                     rel='noopener noreferrer'
+                    onClick={handleLinkClick}
                   >
                     {item.title}
                   </a>
                 ) : (
-                  <Link href={item.path} className='nav-link mx-2 px-3'>
+                  <Link
+                    href={item.path}
+                    className='nav-link mx-2 px-3'
+                    onClick={handleLinkClick}
+                  >
                     {item.title}
                   </Link>
                 )}
