@@ -54,7 +54,7 @@ const ParticlesBackground = () => {
               },
             },
             number: {
-              value: 5,
+              value: 10,
               density: {
                 enable: true,
                 area: 600,
@@ -67,7 +67,7 @@ const ParticlesBackground = () => {
               type: 'circle',
             },
             size: {
-              value: { min: 3, max: 4 },
+              value: { min: 1, max: 3 },
             },
           },
           detectRetina: true,

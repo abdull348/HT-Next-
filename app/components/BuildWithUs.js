@@ -27,7 +27,7 @@ function BuildWithUs() {
                 backgroundColor: '#6874e8',
                 color: '#fff',
                 borderRadius: '3px',
-                transform: 'skew(-6deg)',
+                transform: 'skew(-5deg)',
               }}
             >
               Great Software
