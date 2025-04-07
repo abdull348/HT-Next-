@@ -1,11 +1,6 @@
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import './globals.css';
-
-export const metadata = {
-  title: 'Havana Technologies',
-  description: 'Streamlining your digital future',
-};
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import '../style/globals.css';
 
 export default function RootLayout({ children }) {
   return (

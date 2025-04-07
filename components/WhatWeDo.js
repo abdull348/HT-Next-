@@ -1,11 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaReact } from 'react-icons/fa';
 import { SiNextdotjs } from 'react-icons/si';
 import { PiCheckerboardFill } from 'react-icons/pi';
 import { FaWordpressSimple, FaNodeJs } from 'react-icons/fa';
 import { FcAdvertising } from 'react-icons/fc';
+import { gsap } from 'gsap';
 
 const WhatWeDo = () => {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      import('gsap/ScrollTrigger').then((ScrollTriggerModule) => {
+        gsap.registerPlugin(ScrollTriggerModule.ScrollTrigger);
+
+        const cards = gsap.utils.toArray('.servicesCard');
+
+        cards.forEach((card, index) => {
+          const isEven = index % 2 === 0;
+
+          gsap.from(card, {
+            scrollTrigger: {
+              trigger: card,
+              start: 'top 80%',
+              end: 'bottom 65%',
+              scrub: 1.5,
+              toggleActions: 'play none none reverse',
+              onEnter: () => ScrollTriggerModule.ScrollTrigger.refresh(),
+            },
+            x: isEven ? -200 : 200,
+            opacity: 0,
+            duration: 3,
+            ease: 'power2.out',
+            delay: index * 0.3,
+          });
+        });
+      });
+    }
+  }, []);
+
   const featureCards = [
     {
       icon: <FaReact size={36} />,
@@ -41,7 +72,7 @@ const WhatWeDo = () => {
 
   return (
     <div className='container py-5 section-wrapper' id='services'>
-      <div className='text-center' data-aos='fade-up' data-aos-duration='2000'>
+      <div className='text-center'>
         <h1
           className='mb-5 fs-2'
           style={{ color: '#2f1c5b', fontWeight: '600' }}
@@ -52,7 +83,7 @@ const WhatWeDo = () => {
       </div>
       <div className='row'>
         {featureCards.map((card, index) => (
-          <div className='col-md-6 mb-4' key={index}>
+          <div className='col-md-6 mb-4 servicesCard' key={index}>
             <div
               className='d-flex p-4 border rounded shadow-sm align-items-start featureCard bg-white'
               style={{ position: 'relative', zIndex: 1 }}

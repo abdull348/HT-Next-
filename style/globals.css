@@ -17,6 +17,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   color: var(--foreground);
@@ -123,8 +124,6 @@ a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .navbar-nav .highlight:hover {
-  background-color: #2f1c5b;
-  color: #f6f6f6 !important;
 }
 .navbar-toggler {
   border: none;
@@ -250,19 +249,17 @@ a {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  background-color: #2f1c5b;
   padding: 5px 10px;
   font-weight: 400;
   font-size: 16px;
   border: 1px solid #2f1c5b;
+  background-color: #fff;
   border-radius: 5px;
-  color: #f6f6f6;
   line-height: 1.7;
   letter-spacing: 0.4px;
   margin-left: 3px;
 }
 .meetingButton:hover {
-  color: #f6f6f6;
 }
 .Home_highlighted_text {
   background: #2f1c5b;
@@ -320,7 +317,7 @@ a {
 .portfolio {
   position: relative;
   background-color: #f2f2f2;
-  border-radius: 15px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -350,7 +347,7 @@ a {
   align-items: center;
   padding: 20px;
   background-color: rgba(48, 45, 67, 0.9);
-  border-radius: 15px;
+  border-radius: 8px;
   opacity: 0;
   transition: all 0.4s ease-in-out;
 }
@@ -364,26 +361,11 @@ a {
   color: var(--foreground);
   margin: 0;
 }
-.projectButton {
-  line-height: 1.7;
-  letter-spacing: 0.4px;
-  background-color: #284664;
-  color: #f2f2f2;
-  padding: 10px 20px;
-  border-radius: 0.3rem;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.projectButton:hover {
-  background-color: var(--foreground);
-}
 .projectCard {
   line-height: 1.7;
   letter-spacing: 0.4px;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 0px;
   display: flex;
   height: 300px;
   width: 300px;

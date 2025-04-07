@@ -4,7 +4,7 @@ import { TbPhoneCall } from 'react-icons/tb';
 import { IoLocationOutline } from 'react-icons/io5';
 import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import logo from '../../public/havana-logo.svg';
+import logo from '../public/havana-logo.svg';
 
 function Footer() {
   const footerInfo = [

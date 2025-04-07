@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import contactIllustration from '../../public/contact.svg';
+import contactIllustration from '../public/contact.svg';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
