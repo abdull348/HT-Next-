@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import image1 from '../../public/choose1.webp';
-import image2 from '../../public/choose2.webp';
-import image3 from '../../public/choose3.webp';
+import image1 from '../public/choose1.webp';
+import image2 from '../public/choose2.webp';
+import image3 from '../public/choose3.webp';
 
 const WhyChooseUs = () => {
   const statistics = [

@@ -1,8 +1,17 @@
+'use client';
+import { useEffect } from 'react';
 import Head from 'next/head';
-import './globals.css';
-import Layout from './components/layout';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import '../style/globals.css';
+import Layout from '../app/layout';
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    Aos.init({
+      once: true,
+    });
+  }, []);
   return (
     <>
       <Head>

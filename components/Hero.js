@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import HeroImage from '../../public/adventure.webp';
+import HeroImage from '../public/adventure.webp';
 import { BsArrowRight } from 'react-icons/bs';
 
 function Header() {
@@ -30,19 +30,22 @@ function Header() {
           </p>
           <div
             className='d-flex flex-md-row align-items-md-start align-items-center gap-2 btn-center'
+            style={{ position: 'relative', zIndex: 1 }}
             data-aos='fade-up'
             data-aos-duration='2000'
           >
             <a
-              href='#contact'
+              href='/'
               className='btn quoteButton px-3 py-1'
+              style={{ minHeight: '42px', padding: '15px' }}
               rel='noopener noreferrer'
             >
               Get to Quote
             </a>
             <a
               href='https://calendly.com/arsalar286'
-              className='btn meetingButton border-0 px-3 d-flex align-items-center'
+              className='btn meetingButton px-3 py-1 d-flex align-items-center'
+              style={{ minHeight: '42px', padding: '15px' }}
               target='_blank'
               rel='noopener noreferrer'
             >

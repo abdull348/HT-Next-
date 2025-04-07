@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import twinhub from '../../public/twinhub.webp';
-import canitsm from '../../public/canitsm.webp';
-import havanatech from '../../public/havanatech.webp';
-import geekinate from '../../public/geekinate.webp';
-import qadam from '../../public/qadam.webp';
-import mindstreamsoft from '../../public/mindstreamsoft.webp';
-import molegen from '../../public/molegen.webp';
+import twinhub from '../public/twinhub.webp';
+import canitsm from '../public/canitsm.webp';
+import havanatech from '../public/havanatech.webp';
+import geekinate from '../public/geekinate.webp';
+import qadam from '../public/qadam.webp';
+import mindstreamsoft from '../public/mindstreamsoft.webp';
+import molegen from '../public/molegen.webp';
+import innotech from '../public/Innotech.webp';
 
 const projects = [
   {
@@ -44,6 +45,14 @@ const projects = [
     image: molegen,
     path: '/',
   },
+  {
+    title: 'Innotech Technologies',
+    description: 'E-commerce Application',
+    alt: 'E-commerce Application',
+    image: innotech,
+    path: 'https://innotechtechnologies.us/',
+  },
+
   {
     title: 'Qadam',
     description: 'Digital Marketplace',
@@ -96,7 +105,7 @@ const Services = () => (
         <div>
           <h6
             className='text-uppercase fw-bold mb-1 fs-1'
-            data-aos='fade-left'
+            data-aos='fade-up'
             data-aos-duration='2000'
             style={{
               color: '#fff',
@@ -116,8 +125,8 @@ const Services = () => (
           <h1
             className='mb-2 fs-2'
             style={{ fontWeight: '600', color: '#2f1c5b' }}
-            data-aos='fade-left'
-            data-aos-duration='2000'
+            data-aos='fade-up'
+            data-aos-duration='2500'
           >
             Let's take a look at our
             <span style={{ color: '#6874e8' }}> Recent Works</span>
@@ -131,6 +140,8 @@ const Services = () => (
         <div
           key={index}
           className={`col-3 mt-2 mb-2 col-sm-12 px-5 p-lg-3 text-center projectCard`}
+          data-aos='fade-up'
+          data-aos-duration='3000'
         >
           <ProjectCard {...project} />
         </div>
