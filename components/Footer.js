@@ -94,24 +94,34 @@ function Footer() {
 
         <hr className='mt-5 mb-4 text-white' />
 
-        <div className='row d-flex justify-content-between align-items-center'>
-          <div className='col-auto'>
-            <p className='mb-1 text-white' style={{ fontSize: '14px' }}>
+        <div class='row align-items-center justify-content-between'>
+          <div class='col-auto d-flex align-items-center'>
+            <a
+              href='/privacy-policy'
+              class='text-white small text-decoration-none me-3'
+            >
               Privacy Policy
-            </p>
+            </a>
+            <a
+              href='/terms-and-conditions'
+              class='text-white small text-decoration-none'
+            >
+              Terms & Conditions
+            </a>
           </div>
-          <div className='col-auto'>
-            {socialLinks.map((link, index) => (
+
+          <div class='col-auto d-flex align-items-center'>
+            <p class='mb-0 small text-white'>
+              Developed by
               <a
-                key={index}
-                href={link.href}
+                href='https://devprimo.com/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='mx-3 me-2'
+                class='text-white fw-bold text-decoration-none ms-1'
               >
-                {link.icon}
+                DevPrimo
               </a>
-            ))}
+            </p>
           </div>
         </div>
       </div>
